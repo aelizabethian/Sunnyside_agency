@@ -1,0 +1,783 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile Design */
+/* GENERAL */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: hsl(212, 27%, 19%);
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 3.8rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fraunces", serif;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  padding: 4.5rem 1rem 2.5rem 1rem;
+}
+
+h3 {
+  font-family: "Fraunces", serif;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+h4 {
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.logo {
+  width: 14rem;
+}
+
+img {
+  display: block;
+}
+
+/* NAVIGATION */
+
+.header {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 4rem;
+}
+
+.nav-list {
+  background-color: none;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: white;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav {
+  /* HIDING UNTIL LARGER SIZE*/
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/*********************************
+/* FOR HAMBURGER MENU WHEN IT OPENS
+/**********************************/
+
+/**************************
+  /* FOR WHEN HAMBURGER MENU IS CLICKED */
+.open-nav {
+  background-color: rgb(255, 255, 251);
+  clip-path: polygon(
+    0 11%,
+    88% 11%,
+    100% 0,
+    100% 100%,
+    75% 100%,
+    39% 100%,
+    0 100%
+  );
+
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 20%;
+  right: 10%;
+  z-index: 1000;
+  padding-top: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-list-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  font-family: inherit;
+  z-index: 2000;
+}
+
+.nav-item-mobile {
+  color: rgb(155, 152, 152);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.nav-contactBtn-mobile {
+  background-color: hsl(51, 100%, 49%);
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 2rem 3rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2rem;
+  display: block;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  transition: all 0.4s;
+}
+
+/********************************/
+/* FIRST BIG IMAGE & HEADLINE */
+/*********************************/
+
+.header-section {
+  background: url("../images/mobile/image-header.jpg") no-repeat;
+  height: 60rem;
+  background-position: bottom center;
+  background-size: cover;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.opening-heading {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  right: 10%;
+}
+
+h1::after {
+  content: "";
+  background: url("../images/icon-arrow-down.svg") no-repeat;
+  height: 280px;
+  width: 80px;
+  background-size: cover;
+
+  transform: scale(0.4);
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 38%;
+}
+
+/***************************/
+/* MIDDLE BRAND SERVICES ITEMS -  */
+/*****************************/
+
+.introText {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 2.5rem;
+  max-width: 100%;
+}
+
+.introText a {
+  text-decoration-color: rgba(250, 212, 0, 0.4);
+  text-decoration-thickness: 8px;
+  text-underline-offset: -4px;
+  font-family: "Fraunces", sans-serif;
+  padding-bottom: 7.5rem;
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
+}
+
+.introText .link2 {
+  text-decoration-color: rgba(254, 120, 103, 0.3);
+}
+
+.firstBlock {
+  background: url("../images/mobile/image-transform.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+.secondBlock {
+  background: url("../images/mobile/image-stand-out.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+/* Graphic Design and Photography block */
+
+.thirdBlock {
+  background: url("../images/mobile/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+}
+
+.fourthBlock {
+  background: url("../images/mobile/image-photography.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText h2 {
+  margin-top: 5rem;
+}
+
+.graphicDes p,
+.photo p {
+  color: hsl(167, 40%, 24%);
+  font-size: 16px;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.graphicDes h3,
+.photo h3 {
+  padding: 30rem 2rem 0;
+}
+
+/***************************/
+/* Testimonials */
+/*************************/
+
+.testimonials {
+  padding: 4rem 0;
+  padding-bottom: 10rem;
+}
+
+.testimonials h4 {
+  font-family: "Fraunces", serif;
+}
+
+.testimonials small {
+  font-size: 1.4rem;
+  letter-spacing: 0.8px;
+  padding-top: 0.5rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0 2.5rem;
+  color: hsl(210, 4%, 67%);
+}
+
+blockquote {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.quotes,
+.quote-block {
+  display: flex;
+  flex-direction: column;
+  color: hsl(232, 10%, 55%);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.clientImg {
+  border-radius: 50%;
+  width: 65px;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  margin-top: 5rem;
+}
+
+.name {
+  color: hsl(212, 27%, 19%);
+  padding-bottom: 0;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+
+/************************/
+/* BOTTOM IMAGE GALLERY */
+/************************/
+
+.imageRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 40rem;
+}
+
+.imageRow1 {
+  background: url("../images/mobile/image-gallery-milkbottles.jpg") no-repeat;
+}
+
+.imageRow2 {
+  background: url("../images/mobile/image-gallery-orange.jpg") no-repeat;
+}
+
+.imageRow3 {
+  background: url("../images/mobile/image-gallery-cone.jpg") no-repeat;
+}
+
+.imageRow4 {
+  background: url("../images/mobile/image-gallery-sugar-cubes.jpg") no-repeat;
+}
+
+.imageRow1,
+.imageRow2,
+.imageRow3,
+.imageRow4 {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: all 0.1s;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #458c7e;
+  background-color: hsl(168, 42%, 67%);
+}
+
+.bottomLogo {
+  width: 150px;
+  margin: 0 auto;
+  padding-top: 6rem;
+  filter: invert(49%) sepia(5%) saturate(3866%) hue-rotate(118deg)
+    brightness(75%) contrast(76%);
+}
+
+.bottomNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 4rem auto;
+  gap: 3rem;
+  display: inline-block;
+}
+
+.bottomNav a {
+  text-decoration: none;
+  color: #458c7e;
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+.menuBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15%;
+  list-style: none;
+  padding-bottom: 3rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  padding: 0 1rem;
+  padding-bottom: 10rem;
+}
+
+.contactBottom {
+  display: none;
+}
+
+.attribution {
+  line-height: 2;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.fmAnchor {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  overflow: auto;
+}
+
+/*********************************/
+/*   MEDIA QUERIES   */
+/*******************************/
+
+@media (min-width: 450px) {
+  h1 {
+    font-size: 4.8em;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .header-section {
+    height: 70rem;
+  }
+
+  .logo {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .opening-heading {
+    top: 20%;
+  }
+
+  h1:after {
+    left: 42%;
+  }
+
+  .introText {
+    padding: 8rem;
+    font-size: 1.8rem;
+  }
+
+  .header-section {
+    height: 80rem;
+  }
+
+  .firstBlock,
+  .secondBlock,
+  .thirdBlock,
+  .fourthBlock {
+    height: 55rem;
+  }
+
+  .introText {
+    height: 45rem;
+  }
+
+  .thirdBlock,
+  .fourthBlock {
+    position: relative;
+  }
+  .graphicDes h3,
+  .photo h3,
+  .graphicDes p,
+  .photo p {
+    position: absolute;
+  }
+
+  .graphicDes h3,
+  .photo h3 {
+    bottom: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 2rem;
+  }
+
+  .graphicDes h3 {
+    width: 100%;
+  }
+
+  .graphicDes p,
+  .photo p {
+    color: hsl(167, 40%, 24%);
+    font-size: 16px;
+    bottom: 4rem;
+    padding: 4rem 6rem;
+  }
+
+  .graphic-img-container {
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+
+  .photo-image {
+    background: url("../images/desktop/image-photography.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+
+  .imageRow {
+    height: 80rem;
+  }
+
+  .imageRow1,
+  .imageRow2,
+  .imageRow3,
+  .imageRow4 {
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .graphic-img-container {
+    background: url("../images/desktop/image-graphic-design.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+
+  .photo-image {
+    background: url("../images/desktop/image-photography.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    padding: 8rem 4rem;
+  }
+
+  h1 {
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  h1::after {
+    left: 45%;
+    top: 70%;
+  }
+
+  h2 {
+    padding-top: 0;
+  }
+
+  .header-section {
+    background: url("../images/desktop/image-header.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    height: 80rem;
+  }
+
+  .nav {
+    opacity: 100%;
+    pointer-events: auto;
+    visibility: visible;
+    z-index: 1000;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .nav-list a {
+    color: white;
+    font-family: inherit;
+    text-decoration: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  .nav-item.contactBtn:link,
+  .nav-item.contactBtn:visited {
+    padding: 2rem 3rem;
+    background-color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2rem;
+    display: block;
+    font-family: "Fraunces", serif;
+    color: hsl(212, 27%, 19%);
+    transition: all 0.4s;
+  }
+
+  .nav-item.contactBtn:hover,
+  .nav-item.contactBtn:active {
+    background-color: hsl(51, 100%, 49%);
+  }
+
+  .btn-mobile-nav {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .firstGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+  }
+
+  .firstBlock {
+    background: url("../images/desktop/image-transform.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/-1;
+  }
+
+  .cupImg {
+    background: url("../images/desktop/image-stand-out.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .firstBlock,
+  .secondBlock,
+  .thirdBlock,
+  .fourthBlock {
+    height: 50rem;
+  }
+
+  .transformTxt {
+    grid-row: 1;
+  }
+
+  .audienceTxt {
+    grid-column: 2/-1;
+  }
+
+  .quotes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imageRow1 {
+    background: url("../images/desktop/image-gallery-milkbottles.jpg") no-repeat;
+  }
+
+  .imageRow2 {
+    background: url("../images/desktop/image-gallery-orange.jpg") no-repeat;
+  }
+
+  .imageRow3 {
+    background: url("../images/desktop/image-gallery-cone.jpg") no-repeat;
+  }
+
+  .imageRow4 {
+    background: url("../images/desktop/image-gallery-sugarcubes.jpg") no-repeat;
+  }
+
+  .imageRow {
+    height: 70rem;
+  }
+
+  .imageRow1,
+  .imageRow2,
+  .imageRow3,
+  .imageRow4 {
+    background-size: cover;
+    height: 35rem;
+    width: 100%;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageRow {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    height: 40rem;
+  }
+
+  .imageRow1,
+  .imageRow2,
+  .imageRow3,
+  .imageRow4 {
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+  }
+
+  .graphicDes h3,
+  .photo h3 {
+    bottom: 13rem;
+  }
+
+  .graphicDes p,
+  .photo p {
+    bottom: 2rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .imageRow1,
+  .imageRow2,
+  .imageRow3,
+  .imageRow4 {
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+  }
+}
