@@ -102,7 +102,7 @@ img {
   display: none;
 }
 
-.nav {
+.nav-main {
   /* HIDING UNTIL LARGER SIZE*/
   opacity: 0;
   pointer-events: none;
@@ -622,7 +622,7 @@ footer {
     height: 80rem;
   }
 
-  .nav {
+  .nav-main {
     opacity: 100%;
     pointer-events: auto;
     visibility: visible;
