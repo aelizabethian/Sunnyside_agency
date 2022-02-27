@@ -1,186 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylsheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Sunnyside agency landing page</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylsheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Sunnyside agency landing page</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
- 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <!-- Big image goes on background here -->
+    <header class="header-section">
+      <div class="header">
+        <a href="#"> <img class="logo" src="./images/logo.svg" alt="logo" /></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#services" class="nav-item">Services</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li>
+              <a
+                href="mailto:info@sunnyside.com"
+                target="_blank"
+                class="nav-item contactBtn"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+      <div class="open-nav hide">
+        <nav class="nav-mobile">
+          <ul class="nav-list-mobile">
+            <li><a href="#about" class="nav-item nav-item-mobile">About</a></li>
+            <li>
+              <a href="#services" class="nav-item nav-item-mobile">Services</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-item nav-item-mobile">Projects</a>
+            </li>
+            <li>
+              <a
+                href="mailto:info@sunnyside.com"
+                target="_blank"
+                class="nav-item nav-contactBtn-mobile"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-<body>
+      <div class="opening-heading">
+        <h1 class="heading-text">
+          <span class="h1top">We are </span><span>creatives</span>
+        </h1>
+      </div>
+    </header>
 
-  <!-- Big image goes on background here -->
-  <header class="header-section">
-    <div class="header">
-      <a href="#">
-        <img class="logo" src="./images/logo.svg"></a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#about" class="nav-item">About</a></li>
-          <li><a href="#services" class="nav-item">Services</a></li>
-          <li><a href="#projects" class="nav-item">Projects</a></li>
-          <li><a href="mailto:info@sunnyside.com"  target="_blank" class="nav-item contactBtn">Contact</a></li>
+    <main>
+      <section class="firstGrid">
+        <div class="firstBlock">
+          <div class="firstImg"></div>
+        </div>
+
+        <div class="introText transformTxt" id="about">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <p><a href="#">Learn more</a></p>
+        </div>
+
+        <div class="secondBlock" aria-label="" role="img">
+          <div class="firstImg"></div>
+        </div>
+
+        <div class="introText audienceTxt">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <p><a class="link2" href="#">Learn more</a></p>
+        </div>
+
+        <div class="thirdBlock">
+          <div class="graphic-img-container"></div>
+
+          <div class="graphicDes" id="services">
+            <h3>Graphic design</h3>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="fourthBlock">
+          <div class="photo-image"></div>
+
+          <div class="photo">
+            <h3>Photography</h3>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="projects">
+        <h4>Client testimonials</h4>
+        <div class="quotes">
+          <div class="quote-block">
+            <img
+              class="clientImg"
+              src="./images/image-emily.jpg"
+              alt="client image"
+            />
+            <blockquote>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </blockquote>
+            <p class="name">Emily R</p>
+            <small class="title">Marketing Director</small>
+          </div>
+          <div class="quote-block">
+            <img
+              class="clientImg"
+              src="./images/image-thomas.jpg"
+              alt="client image"
+            />
+            <blockquote>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </blockquote>
+            <p class="name">Thomas S.</p>
+            <small class="title"> Chief Operating Officer</small>
+          </div>
+          <div class="quote-block">
+            <img
+              class="clientImg"
+              src="./images/image-jennie.jpg"
+              alt="client image"
+            />
+            <blockquote>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </blockquote>
+            <p class="name">Jennie F.</p>
+            <small class="title">Business Owner</small>
+          </div>
+        </div>
+      </section>
+
+      <div class="imageRow">
+        <div class="imageRow1"></div>
+        <div class="imageRow2"></div>
+        <div class="imageRow3"></div>
+        <div class="imageRow4"></div>
+      </div>
+    </main>
+    <footer>
+      <img class="bottomLogo" src="./images/logo.svg" alt="client image" />
+
+      <nav class="bottomNav">
+        <ul class="menuBottom">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </div>
-    <div class="open-nav hide">
-      <nav class=" nav-mobile">
-      <ul class="nav-list-mobile">
-        <li><a href="#about" class="nav-item nav-item-mobile">About</a></li>
-        <li><a href="#services" class="nav-item nav-item-mobile"">Services</a></li>
-        <li><a href="#projects" class="nav-item nav-item-mobile"">Projects</a></li>
-        <li><a href="mailto:info@sunnyside.com"  target="_blank" class="nav-item nav-contactBtn-mobile">Contact</a></li>
-      </ul>
-    </nav>
-    </div>
-
-    <div class="opening-heading">
-      <h1 class="heading-text"><span class="h1top">We are </span><span>creatives</span></h1>
-    </div>
-  
-
-  </header>
-
-
-  <main>
-    <section class="firstGrid" >
-      <div class="firstBlock">
-        <div class="firstImg"></div>
+      <div class="socials">
+        <a href="www.facebook.com" target="_blank"
+          ><img src="./images/icon-facebook.svg" alt="facebook logo"
+        /></a>
+        <a href="www.instagram.com" target="_blank"
+          ><img src="./images/icon-instagram.svg" alt="instagram logo"
+        /></a>
+        <a href="www.twitter.com" target="_blank"
+          ><img src="./images/icon-twitter.svg" alt="twitter logo"
+        /></a>
+        <a href="www.pinterest.com" target="_blank"
+          ><img src="./images/icon-pinterest.svg" alt="pinterest logo"
+        /></a>
       </div>
 
-      <div class="introText transformTxt" id="about">
-        <h2>Transform your brand</h2>
-        <p>We are a full-service creative agency specializing in helping brands grow fast.
-          Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <p><a href="#">Learn more</a></p>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="fmAnchor"
+          >Frontend Mentor</a
+        >. Coded by Amanda Richardson.
       </div>
-
-
-      <div class="secondBlock" aria-label="" role="img">
-        <div class="firstImg"></div>
-      </div>
-
-      <div class="introText audienceTxt">
-        <h2>Stand out to the right audience</h2>
-        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
-          we’ll build and extend your brand in digital places. </p>
-        <p><a class="link2" href="#">Learn more</a></p>
-      </div>
-
-      <div class="thirdBlock">
-        <div class="graphic-img-container"></div>
-
-
-        <div class="graphicDes" id="services">
-          <h3>Graphic design</h3>
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-            potential clients’ attention.</p>
-        </div>
-      </div>
-
-      <div class="fourthBlock">
-        <div class="photo-image"></div>
-
-        
-        <div class="photo">
-          <h3>Photography</h3>
-          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
-            image.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="testimonials" id="projects">
-      <h4>Client testimonials</h4>
-      <div class="quotes">
-        <div class="quote-block">
-          <img class="clientImg" src="./images/image-emily.jpg" />
-          <blockquote>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
-            were
-            always hit.</blockquote>
-          <p class="name">Emily R</p>
-          <small class="title">Marketing Director</small>
-        </div>
-        <div class="quote-block">
-          <img class="clientImg" src="./images/image-thomas.jpg" />
-          <blockquote>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
-            satisfying
-            and enjoyable experience.</blockquote>
-          <p class="name">Thomas S.</p>
-          <small class="title"> Chief Operating Officer</small>
-        </div>
-        <div class="quote-block">
-          <img class="clientImg" src="./images/image-jennie.jpg" />
-          <blockquote> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly
-            recommended!</blockquote>
-          <p class="name">Jennie F.</p>
-          <small class="title">Business Owner</small>
-        </div>
-      </div>
-    </section>
-
-    <div class="imageRow">
-      <div class='imageRow1'></div>
-      <div class='imageRow2'></div>
-      <div class='imageRow3'></div>
-      <div class='imageRow4'></div>
-    </div>
-
-  </main>
-  <footer>
-    <img class="bottomLogo" src="./images/logo.svg" />
-
-    <nav class="bottomNav">
-      <ul class="menuBottom">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li class="contactBottom"><a href="mailto:info@sunnyside.com"  target="_blank">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="socials">
-      <a href="www.facebook.com" target="_blank"><img src="./images/icon-facebook.svg"></a>
-      <a href="www.instagram.com" target="_blank"><img src="./images/icon-instagram.svg"></a>
-      <a href="www.twitter.com" target="_blank"><img src="./images/icon-twitter.svg"></a>
-      <a href="www.pinterest.com" target="_blank"><img src="./images/icon-pinterest.svg"></a>
-    </div>
-
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="fmAnchor">Frontend
-        Mentor</a>.<span></span>
-      Coded by Amanda Richardson</a>.
-    </div>
-  </footer>
-  <script src="./app.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+    </footer>
+    <script src="./app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
